@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+    <groupId>com.jiujichina</groupId>
+    <artifactId>jiujichina-jiuji</artifactId>
+    <version>1.0.1</version> 
+  </parent>
+  
+  <artifactId>jiujichina-jiuji-parent</artifactId>
+  <packaging>pom</packaging>
+  
+  
+  
+    <properties>
+     
+      <javaVersion>1.8</javaVersion>
+      <encodingType>UTF-8</encodingType>
+      
+      <jiujichina-common-base.version>1.0.1</jiujichina-common-base.version>
+      <jiujichina-common-core.version>1.0.1</jiujichina-common-core.version>
+      
+      <jiujichina-jiuji-parent.version>1.0.1</jiujichina-jiuji-parent.version> 
+      <jiujichina-jiuji-facade-user.version>1.0.1</jiujichina-jiuji-facade-user.version>
+      <jiujichina-jiuji-service-user.version>1.0.1</jiujichina-jiuji-service-user.version>
+      <jiujichina-jiuji-facade-homepage.version>1.0.1</jiujichina-jiuji-facade-homepage.version>
+      <jiujichina-jiuji-service-homepage.version>1.0.1</jiujichina-jiuji-service-homepage.version>
+      <jiujichina-jiuji-facade-tbcarousel.version>1.0.1</jiujichina-jiuji-facade-tbcarousel.version> 
+      <jiujichina-jiuji-service-tbcarousel.version>1.0.1</jiujichina-jiuji-service-tbcarousel.version> 
+      
+      <jiujichina-jiuji-facade-tbclass.version>1.0.1</jiujichina-jiuji-facade-tbclass.version> 
+      <jiujichina-jiuji-service-tbclass.version>1.0.1</jiujichina-jiuji-service-tbclass.version> 
+      
+      
+      <jiujichina-jiuji-facade-tbhot.version>1.0.1</jiujichina-jiuji-facade-tbhot.version> 
+      <jiujichina-jiuji-service-tbhot.version>1.0.1</jiujichina-jiuji-service-tbhot.version> 
+      
+      <jiujichina-jiuji-facade-tbproduct.version>1.0.1</jiujichina-jiuji-facade-tbproduct.version> 
+      <jiujichina-jiuji-service-tbproduct.version>1.0.1</jiujichina-jiuji-service-tbproduct.version> 
+      
+      
+      <jiujichina-jiuji-facade-tbspecial.version>1.0.1</jiujichina-jiuji-facade-tbspecial.version> 
+      <jiujichina-jiuji-service-tbspecial.version>1.0.1</jiujichina-jiuji-service-tbspecial.version> 
+      
+      
+      <jiujichina-jiuji-vo.version>1.0.1</jiujichina-jiuji-vo.version> 
+      <jiujichina-jiuji-web.version>1.0.1</jiujichina-jiuji-web.version> 
+      
+      
+  </properties> 
+  
+  <repositories>
+       <repository>
+           <id>nexus</id>
+            <name>Team Nexus Repository</name>
+            <url>http://www.jiujichina.com:8081/nexus/content/groups/public</url>
+       </repository>
+        
+  </repositories>
+  
+  <dependencies>
+        <dependency>
+      <groupId>com.jiujichina</groupId>
+      <artifactId>jiujichina-common-base</artifactId>
+      <version>${jiujichina-common-base.version}</version> 
+    </dependency>
+    
+    <dependency>
+      <groupId>com.jiujichina</groupId>
+      <artifactId>jiujichina-common-core</artifactId>
+      <version>${jiujichina-common-core.version}</version> 
+    </dependency>
+    
+    <!-- sso -->
+	<dependency>
+	    <groupId>org.jasig.cas.client</groupId>
+	    <artifactId>cas-client-core</artifactId>
+	    <version>3.2.1</version>
+	</dependency>
+	
+  </dependencies>
+   
+   <build>
+      <plugins>
+			<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>2.0.2</version>
+					<configuration>
+							<source>${javaVersion}</source>
+							<target>${javaVersion}</target>
+							<encoding>${encodingType}</encoding> 
+					</configuration>
+			 </plugin>
+	  </plugins>  
+   </build>
+   
+</project>
