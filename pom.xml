@@ -22,6 +22,7 @@
       
       <jiujichina-common-base.version>1.0.1</jiujichina-common-base.version>
       <jiujichina-common-core.version>1.0.1</jiujichina-common-core.version>
+      <jiujichina-common-activiti.version>1.0.1</jiujichina-common-activiti.version>
       
       <jiujichina-jiuji-parent.version>1.0.1</jiujichina-jiuji-parent.version> 
       <jiujichina-jiuji-facade-user.version>1.0.1</jiujichina-jiuji-facade-user.version>
